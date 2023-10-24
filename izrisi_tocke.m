@@ -52,8 +52,6 @@ function izrisi_tocke()
     % Riši lok krožnice v črni barvi
     plot(x_circle, y_circle, 'k--', 'LineWidth', 2, 'DisplayName', 'Krožnica');
 
-    legend('Location', 'Best');
-
     % Prikaži rezultat
     axis equal;
     title('Naključno generirane točke in krožnice');
