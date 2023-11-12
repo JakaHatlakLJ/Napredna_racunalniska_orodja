@@ -1,0 +1,63 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1553,         53]
+NotebookOptionsPosition[      1199,         39]
+NotebookOutlinePosition[      1602,         55]
+CellTagsIndexPosition[      1559,         52]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Get", "[", 
+     "\"\<C:\\\\Users\\\\hatla\\\\Desktop\\\\FAKS\\\\3.RRP\\\\Napredna Ra\
+\[CHacek]unalni\[SHacek]ka Orodja\\\\DN 2\\\\MonteCarloPiModul.m\>\"", "]"}], 
+    ";"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+   "Get", "[", "\"\<(*Pot do datoteke/MonteCarloPiModul.m*)\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"MonteCarloPi", "[", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9088055553282404`*^9, 3.908805622442574*^9}, {
+  3.9088059938190393`*^9, 
+  3.9088060510497675`*^9}},ExpressionUUID->"4645d8df-d3b1-4d60-a20f-\
+5b377140b7fc"]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{1146, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"07811a86-53da-4a27-b062-32b2ef2f9f3c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 637, 17, 67, "Input",ExpressionUUID->"4645d8df-d3b1-4d60-a20f-5b377140b7fc"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
