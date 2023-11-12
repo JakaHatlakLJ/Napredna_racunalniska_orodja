@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3551,        110]
+NotebookOptionsPosition[      3195,         96]
+NotebookOutlinePosition[      3598,        112]
+CellTagsIndexPosition[      3555,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\n", "\n", 
+  RowBox[{"(*", 
+   RowBox[{"Definicija", " ", "funkcije", " ", "f", 
+    RowBox[{"(", "t", ")"}]}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "t_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Sin", "[", "t", "]"}], "*", 
+    RowBox[{
+     RowBox[{"t", "^", "2"}], "/", "E"}]}]}], "\n", "\n", 
+  RowBox[{"(*", 
+   RowBox[{"To\[CHacek]ka", " ", "okoli", " ", "katere", " ", "razvijamo"}], 
+   "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"t0", "=", "2"}], ";"}], "\n", "\n", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Funkcija", " ", "za", " ", "izris", " ", "grafa", " ", "s", " ", 
+     "pribli\[ZHacek]kom", " ", "n"}], "-", 
+    RowBox[{"tega", " ", "reda"}]}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"IzrisGrafa", "[", "n_", "]"}], ":=", "\n", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"f", "[", "t", "]"}], ",", 
+        RowBox[{"Normal", "[", 
+         RowBox[{"Series", "[", 
+          RowBox[{
+           RowBox[{"f", "[", "t", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", "t0", ",", "n"}], "}"}]}], "]"}], "]"}]}], 
+       "}"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "4"}], "}"}], ",", "\n", 
+     RowBox[{"PlotLegends", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Originalna funkcija\>\"", ",", 
+        RowBox[{"StringForm", "[", 
+         RowBox[{
+         "\"\<Pribli\[ZHacek]ek ``. reda okoli \\!\\(\\*SubscriptBox[\\(t\\), \
+\\(0\\)]\\)=``\>\"", ",", "n", ",", "t0"}], "]"}]}], "}"}]}], ",", "\n", 
+     RowBox[{"PlotLabel", "->", 
+      RowBox[{"StringForm", "[", 
+       RowBox[{
+       "\"\<Pribli\[ZHacek]ki funkcije f(t) = `` okoli to\[CHacek]ke \
+\\!\\(\\*SubscriptBox[\\(t\\), \\(0\\)]\\)=``\>\"", ",", 
+        RowBox[{"f", "[", "t", "]"}], ",", "t0"}], "]"}]}], ",", "\n", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "4"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "}"}]}]}], "]"}]}], "\n", 
+  "\n", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Uporaba", " ", "funkcije", " ", "Manipulate", " ", "za", " ", 
+    "spreminjanje", " ", "reda", " ", "pribli\[ZHacek]ka"}], "*)"}]}], "\n", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"IzrisGrafa", "[", "n", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10", ",", "1"}], "}"}]}], "]"}]}], "Input",Ex\
+pressionUUID->"525b9bfc-8f92-450b-a7ad-56cd05665ad2"]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{1146, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d8dede2c-ae28-4ce2-9526-5e74c3b010bb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2633, 74, 328, "Input",ExpressionUUID->"525b9bfc-8f92-450b-a7ad-56cd05665ad2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
